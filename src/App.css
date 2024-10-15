@@ -2,6 +2,173 @@
   text-align: center;
 }
 
+.text{
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333333;
+  padding:0px 30px;
+  padding-top:10px;
+  padding-bottom:30px;
+  text-align: left;
+}
+.imagewrapper{
+    height:fit-content;
+    display: flex;
+    gap:40px;
+}
+.location{
+  color:#f2960c;
+  font-size:1rem ;
+  font-weight: 500;
+
+  
+}
+.front-card:hover{
+  .name{
+    color:white;
+  }
+  .text{
+    color:white;
+  }
+  background-color: #2C2F38;
+}
+.card{
+  flex: 0 0 calc(50% - 20px); 
+  position:relative;
+  height:fit-content;
+  z-index:10;
+  background-color: white;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.namecard{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.name{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.front-card{
+  
+  position:relative;
+  border-radius: 10px;
+  z-index:5;
+  background-color: white;
+  transition: all 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ 
+
+}
+.backgroundcard{
+
+  position: absolute;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  background-color: #f2960c;
+  transform: rotate(0deg);
+  z-index:3;
+  border-radius: 10px;
+  transition:all 0.5s ease;
+
+}
+.card:hover .backgroundcard {
+  transform: rotate(-3deg);
+
+}
+.cards::-webkit-scrollbar {
+  display: none; 
+}
+.cards{
+  box-sizing: border-box;
+  display:flex;
+  height:350px;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width:100%;
+  padding:0 10px;
+  gap:30px;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+
+}
+
+.rotatecard{
+  height:fit-content;
+  width:fit-content;
+  background-color: yellow;
+  z-index:5;
+}
+
+.image2{
+  position:relative;
+    width:fit-content;
+    height:75px;
+    width:75px;
+    border-radius: 50%;
+  background-color: #fbfbfb;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+
+
+}
+
+
+.logo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  height:80%;
+  width:80%;
+  border:7px solid white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.testimonials-wrapper{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.testimonials{
+  text-align: center;
+  width:80%;
+  height:500px;
+}
+.doublequotes{
+  width:30px;
+  height:30px;
+  margin-top:10px;
+}
+.upper-card{
+  display:flex;
+  justify-content: space-between;
+  padding:20px 30px;
+}
+.header{
+  padding:10px 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:#f2960c;
+}
+.subheader{
+  padding:20px 0px;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.changecolor{
+  color:#f2960c;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

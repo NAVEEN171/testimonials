@@ -102,7 +102,7 @@ function App() {
 if(slide===0 && manual){
 setTimeout(() => {
   scrollToLeft();
-}, 1500);
+}, 1000);
   
 }
   },[slide])
